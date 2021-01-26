@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #FF5733;
+    font-family: 'Lato', sans-serif;
+    background-image: url('./img.jpg');
+}
+
+ul {
+    list-style: none;
+}
+
+/* container */
+
+.container {
+    background-color: #fff;
+    width: 60%;
+    height: 100%;
+    margin: 50px auto;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+}
+
+/* top section */
+
+.container .top-section {
+    padding: 30px 50px;
+    line-height: 2;
+    margin-bottom: 20px;
+    /* font-size: 1.2rem; */
+}
+
+.top-section h1 {
+    color: #00E4FF;
+    font-size: 2.5rem;
+}
+
+.top-section h2 {
+    color: #00FFA8;
+}
+
+.container h1, .container h2 {
+    margin-bottom: 15px; 
+}
+
+/* bottom section */
+
+.bottom-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: #262626;
+    
+
+}
+
+.bottom-section .left-section {
+    background-color: #96FF84;
+    padding: 20px 50px;
+    line-height: 2;
+}
+
+.bottom-section .left-section span {
+    font-size: 2rem;
+    padding-right: 5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 17px 0;
+    margin-top: 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FFFB1A;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    color: #262626;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #00E4FF;
+}
+
+.bottom-section .right-section {
+    background-color: #FAFB66;
+    padding: 30px 50px;
+}
+
+.right-section ul {
+    line-height: 1.9;
+}
+
+@media(max-width: 900px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media(max-width: 700px) {
+    .container {
+        width: 95%;
+        margin: 50px auto;
+    }
+
+    .bottom-section .left-section {
+        padding: 20px;
+    }
+
+    .bottom-section .right-section {
+        font-size: 1rem;
+        padding: 20px 40px;
+        
+    }
+
+    .bottom-section .right-section ul li {
+        margin-bottom: 9px;
+    }
+}
